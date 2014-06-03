@@ -15,7 +15,7 @@ public class LoginManagerTests {
 
         Boolean result = lm.isLoginOK("a", "pass");
 
-        assertFalse(result);
+        assertTrue(result);
     }
 
     private LoginManager getLoginManager() {
