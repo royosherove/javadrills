@@ -25,6 +25,9 @@
         <module name="javadrill" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="javadrill" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
