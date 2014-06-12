@@ -6,7 +6,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 
-public class LoginManagerTests {
+public class LoginManagerTest {
 
     @Test
     public void isLoginOK_withNoUsers_returnsFalse() {
@@ -15,7 +15,7 @@ public class LoginManagerTests {
 
         Boolean result = lm.isLoginOK("a", "pass");
 
-        assertTrue(result);
+        assertFalse(result);
     }
 
     private LoginManager getLoginManager() {

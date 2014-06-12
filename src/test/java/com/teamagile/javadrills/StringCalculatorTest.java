@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
 
-public class StringCalculatorTests {
+public class StringCalculatorTest{
 
     private StringCalculator makeCalc() {
         return new StringCalculator();
