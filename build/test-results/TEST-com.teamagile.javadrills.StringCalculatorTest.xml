@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.teamagile.javadrills.StringCalculatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-02-16T22:25:44" hostname="royoair2.local" time="0.008">
+  <properties/>
+  <testcase name="add_negative_throws1" classname="com.teamagile.javadrills.StringCalculatorTest" time="0.004"/>
+  <testcase name="add_negative_throws0" classname="com.teamagile.javadrills.StringCalculatorTest" time="0.001"/>
+  <testcase name="add_multipleNumbers_returnstheSum" classname="com.teamagile.javadrills.StringCalculatorTest" time="0.0"/>
+  <testcase name="add_singleNumber_returnsThatNumber" classname="com.teamagile.javadrills.StringCalculatorTest" time="0.0"/>
+  <testcase name="add_emptyString_returnsZero" classname="com.teamagile.javadrills.StringCalculatorTest" time="0.0"/>
+  <testcase name="add_negative_throws2" classname="com.teamagile.javadrills.StringCalculatorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

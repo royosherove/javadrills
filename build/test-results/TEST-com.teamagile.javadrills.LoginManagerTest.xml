@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.teamagile.javadrills.LoginManagerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-02-16T22:25:44" hostname="royoair2.local" time="0.004">
+  <properties/>
+  <testcase name="isLoginOK_withNoUsers_returnsFalse" classname="com.teamagile.javadrills.LoginManagerTest" time="0.003"/>
+  <testcase name="addUser_whenCalled_UserIsAbleToLogin" classname="com.teamagile.javadrills.LoginManagerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
