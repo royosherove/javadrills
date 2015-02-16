@@ -1,1 +1,1 @@
-watch( 'src/*\.*') { |md| system("mvn test") }
+watch( 'src/*\.*') { |md| system("gradle test") }

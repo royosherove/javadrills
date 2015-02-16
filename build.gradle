@@ -18,3 +18,10 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version:'4.8.2'
 }
+
+tasks.withType(Test) {
+    testLogging {
+            exceptionFormat "full"
+    }
+}
+
