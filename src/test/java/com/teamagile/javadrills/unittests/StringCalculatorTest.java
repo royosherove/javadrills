@@ -3,6 +3,8 @@ package com.teamagile.javadrills.unittests;
 
 import com.teamagile.javadrills.StringCalculator;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -30,14 +32,15 @@ public class StringCalculatorTest{
                             calc.parse("-1"));
     }
 
-//    @Test
-//    public void add_negative_throws2() {
-//        StringCalculator calc = makeCalc();
-//
-//        thrown.expect(IllegalArgumentException.class);
-//        calc.add("-1");
-//    }
-//
+    @ParameterizedTest
+    @ValueSource(strings = {"-1", "-2"})
+    public void add_negative_throwsIllegal(String input) {
+        StringCalculator calc = makeCalc();
+        assertThrows(IllegalArgumentException.class,
+                () ->
+                        calc.parse(input));
+    }
+
 //    @Test(expected = IllegalArgumentException.class)
 //    public void add_negative_throws1() {
 //        makeCalc().add("-1");

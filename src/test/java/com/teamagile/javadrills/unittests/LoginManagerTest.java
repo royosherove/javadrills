@@ -13,7 +13,7 @@ public class LoginManagerTest {
 
         LoginManager lm = getLoginManager();
 
-        Boolean result = lm.isLoginOK("a", "pass");
+        Boolean result = lm.isLoginOK("b", "pass");
 
         assertFalse(result);
     }

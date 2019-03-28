@@ -39,7 +39,7 @@ public class StringCalculator {
     }
 
     public int parse(String numbers) {
-        if(numbers.contains("-1")){
+        if(numbers.contains("-")){
             throw new IllegalArgumentException("dude, really?");
         }
         if (numbers.length() == 0) {
