@@ -1,5 +1,6 @@
-package com.teamagile.javadrills;
+package com.teamagile.javadrills.unittests;
 
+import com.teamagile.javadrills.LoginManager;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

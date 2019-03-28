@@ -2,6 +2,7 @@
 .gradle
 /target
 **/*.class
+**/*.DS_Store
 build
 target
 target/classes/

@@ -1,6 +1,7 @@
-package com.teamagile.javadrills;
+package com.teamagile.javadrills.unittests;
 
 
+import com.teamagile.javadrills.StringCalculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
