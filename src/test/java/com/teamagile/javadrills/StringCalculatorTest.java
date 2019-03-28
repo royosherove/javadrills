@@ -4,6 +4,7 @@ package com.teamagile.javadrills;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class StringCalculatorTest{
 
@@ -20,6 +21,13 @@ public class StringCalculatorTest{
     }
 
 
+    @Test
+    public void add_negative_throws(){
+        StringCalculator calc = makeCalc();
+        assertThrows(IllegalArgumentException.class,
+                    () ->
+                            calc.parse("-1"));
+    }
 
 //    @Test
 //    public void add_negative_throws2() {

@@ -39,6 +39,9 @@ public class StringCalculator {
     }
 
     public int parse(String numbers) {
+        if(numbers.contains("-1")){
+            throw new IllegalArgumentException("dude, really?");
+        }
         if (numbers.length() == 0) {
             return 0;
         }
