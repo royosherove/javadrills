@@ -17,6 +17,7 @@ public class LoginManager {
             if (item.username == user && item.password == pass) {
                 return true;
             }
+
         }
         return false;
     }
