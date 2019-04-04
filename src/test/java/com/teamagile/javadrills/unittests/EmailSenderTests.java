@@ -17,7 +17,7 @@ public class EmailSenderTests {
 
 
     @Test
-    public void add_emptyString_returnsDefault() {
+    public void sendEmail_WithMsg_EmailBodyToServerContainsMsg() {
         FakeEmailServer fakeEmailServer = new FakeEmailServer();
         EmailSender sender = new EmailSender(fakeEmailServer);
 
