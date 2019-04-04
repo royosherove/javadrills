@@ -24,6 +24,14 @@ public class StringCalculatorTest{
     }
 
 
+   @Test
+    public void add_emptyString_returnsDefault(){
+        StringCalculator calc = makeCalc();
+        int result = calc.add("");
+        assertEquals(0,result);
+    }
+
+
     @Test
     public void add_negative_throws(){
         StringCalculator calc = makeCalc();
@@ -32,10 +40,13 @@ public class StringCalculatorTest{
                             calc.parse("-1"));
     }
 
+
+
     @ParameterizedTest
     @ValueSource(strings = {"-1", "-2"})
     public void add_negative_throwsIllegal(String input) {
         StringCalculator calc = makeCalc();
+
         assertThrows(IllegalArgumentException.class,
                 () ->
                         calc.parse(input));
